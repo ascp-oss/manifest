@@ -1,41 +1,57 @@
-# PixelOS
+![ASCP OS](https://github.com/Pixelify-AOSP/manifest/raw/sixteen-qpr2/Banner.png)
 
-## Getting Started
+# The ASCP Project | Android Open Source Software
+An Android Operating System Based On AOSP.
 
-To get started with the PixelOS source code, you'll need to be
-familiar with [Git and Repo](https://source.android.com/setup/build/downloading).
-
-To initialize your local repository, run:
+# Initialize local repository
 
 ```bash
-repo init -u https://github.com/PixelOS-AOSP/android_manifest.git -b sixteen-qpr2 --git-lfs
+repo init -u https://github.com/Pixelify-AOSP/manifest.git -b sixteen-qpr2 --git-lfs
+```
+Or if you want to save some system space and don't care about repo history depths:
+```bash
+repo init -u https://github.com/vos-ascp/pos_manifest.git -b sixteen-qpr2 --git-lfs --depth=1
 ```
 
-Then, sync the repository:
+# Sync up
 
 ```bash
-repo sync
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 
-## Building the System
+# Build
 
-Initialize the ROM build environment by sourcing the envsetup.sh script:
-
+- Set up the build environment
 ```bash
-source build/envsetup.sh
+. build/envsetup.sh
 ```
 
-After cloning the device-specific sources, use breakfast to configure the build for your device:
-
+- Lunch a target
 ```bash
-breakfast devicecodename
+lunch custom_codename-bp4a-user
 ```
 
-Start the compilation:
+- Build Configuration
+Customize the build by defining configuration flags in your device makefile (e.g., `ascp_<device_codename>.mk` or `custom_device.mk`):
 
-```bash
-m pixelos
+```make
+# ASCP Configuration Flags
+ASCP_MAINTAINER := Maintainer_name
+WITH_REVANCED := true
+ASCP_OFFICIAL := true
+PERF_ANIM_OVERRIDE := true
 ```
 
-## Submitting Patches
-Patches are always welcome! Feel free to submit your patches via [PixelOS Gerrit](https://review.pixelos.net/).
+### Configuration Options
+
+#### Maintainer Info
+* `ASCP_MAINTAINER` — Name of the device maintainer to be displayed in system info. [Default: None]
+
+#### Package Inclusion
+* `WITH_REVANCED` — Pre-build and bundle ReVanced applications. [Default: false]
+
+#### Build & Performance
+* `ASCP_OFFICIAL` — Mark the build as official. [Default: false]
+* `PERF_ANIM_OVERRIDE` — Enable custom animation scales and overrides for smoother performance. [Default: false]
+
+

@@ -23,6 +23,7 @@
   <remove-project name="platform/external/zstd" />
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/libs/systemui" />
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/frameworks/opt/telephony" />
   <remove-project name="platform/hardware/broadcom/libbt" />
@@ -36,6 +37,7 @@
   <remove-project name="platform/packages/apps/CertInstaller" />
   <remove-project name="platform/packages/apps/DocumentsUI" />
   <remove-project name="platform/packages/apps/KeyChain" />
+  <remove-project name="platform/libcore" />
   <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/providers/ContactsProvider" />
   <remove-project name="platform/packages/providers/MediaProvider" />
@@ -49,6 +51,7 @@
   <remove-project name="platform/packages/modules/Virtualization" />
   <remove-project name="platform/packages/modules/Wifi" />
   <remove-project name="platform/packages/services/DeviceAsWebcam" />
+  <remove-project name="platform/packages/services/Iwlan" />
   <remove-project name="platform/packages/services/Telecomm" />
   <remove-project name="platform/packages/services/Telephony" />
   <remove-project name="platform/system/bpf" />
@@ -63,4 +66,6 @@
   <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/system/update_engine" />
   <remove-project name="platform/system/vold" />
+  <remove-project name="platform/packages/apps/ThemePicker" />
+  <remove-project name="platform/packages/apps/WallpaperPicker2" />
 </manifest>

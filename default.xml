@@ -19,6 +19,10 @@
            fetch="https://gitlab.com/"
            revision="sixteen-qpr2" />
 
+  <remote  name="codeberg"
+           fetch="https://codeberg.org/"
+           revision="sixteen-qpr2" />         
+
   <default revision="refs/tags/android-16.0.0_r4"
            remote="aosp"
            sync-j="4" />
@@ -1059,5 +1063,6 @@
   <include name="snippets/remove.xml" />
   <include name="snippets/lineage.xml" />
   <include name="snippets/pixelos.xml" />
+  <include name="snippets/ascp.xml" />
 
 </manifest>
