@@ -48,7 +48,7 @@
   <project path="packages/modules/Wifi" name="Pixelify-AOSP/android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="github" />
 
   <!-- Updater -->
-  <project path="packages/apps/Updater" name="Pixelify-AOSP/android_packages_apps_Updater" remote="github" />
+  <project path="packages/apps/OpenDelta" name="Pixelify-AOSP/packages_apps_OpenDelta" remote="github" />
 
   <!-- vendor repos-->
   <project path="vendor/gms" name="kenway214/vendor_gms_ascp" remote="codeberg" />
