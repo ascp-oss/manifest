@@ -10,7 +10,7 @@ repo init -u https://github.com/ascp-oss/manifest.git -b sixteen-qpr2 --git-lfs
 ```
 Or if you want to save some system space and don't care about repo history depths:
 ```bash
-repo init -u https://github.com/vos-ascp/pos_manifest.git -b sixteen-qpr2 --git-lfs --depth=1
+repo init -u  https://github.com/ascp-oss/manifest.gi -b sixteen-qpr2 --git-lfs --depth=1
 ```
 
 # Sync up
@@ -51,7 +51,7 @@ PERF_ANIM_OVERRIDE := true
 * `WITH_REVANCED` — Pre-build and bundle ReVanced applications. [Default: false]
 
 #### Build & Performance
-* `ASCP_OFFICIAL` — Mark the build as official. [Default: false]
+* `ASCP_OFFICIAL` — Mark the build as official. [Default: true]
 * `PERF_ANIM_OVERRIDE` — Enable custom animation scales and overrides for smoother performance. [Default: false]
 
 
