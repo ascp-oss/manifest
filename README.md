@@ -1,4 +1,4 @@
-![ASCP OS](https://github.com/Pixelify-AOSP/manifest/raw/sixteen-qpr2/Banner.png)
+![ASCP OS](https://github.com/ascp-oss/manifest/raw/sixteen-qpr2/Banner.png)
 
 # The ASCP Project | Android Open Source Software
 An Android Operating System Based On AOSP.
@@ -6,7 +6,7 @@ An Android Operating System Based On AOSP.
 # Initialize local repository
 
 ```bash
-repo init -u https://github.com/Pixelify-AOSP/manifest.git -b sixteen-qpr2 --git-lfs
+repo init -u https://github.com/ascp-oss/manifest.git -b sixteen-qpr2 --git-lfs
 ```
 Or if you want to save some system space and don't care about repo history depths:
 ```bash
