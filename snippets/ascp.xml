@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project path="build/make" name="Pixelify-AOSP/build" groups="pdk,sysui-studio" remote="github">
+  <project path="build/make" name="ascp-oss/build" groups="pdk,sysui-studio" remote="github">
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -8,49 +8,49 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="Pixelify-AOSP/build_soong" groups="pdk,tradefed,sysui-studio" remote="github">
+  <project path="build/soong" name="ascp-oss/build_soong" groups="pdk,tradefed,sysui-studio" remote="github">
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
-  <project path="frameworks/base" name="Pixelify-AOSP/android_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="github" revision="clean-branch" />
-  <project path="frameworks/av" name="Pixelify-AOSP/android_frameworks_av" groups="pdk,sysui-studio" remote="github" />
-  <project path="frameworks/libs/systemui" name="Pixelify-AOSP/frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="github" />
-  <project path="frameworks/native" name="Pixelify-AOSP/android_frameworks_native" groups="pdk" remote="github" />
-  <project path="packages/apps/Settings" name="Pixelify-AOSP/android_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="github" revision="clean-branch" />
-  <project path="packages/services/Telecomm" name="Pixelify-AOSP/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="github" />
-  <project path="packages/services/OmniJaws" name="Pixelify-AOSP/packages_services_OmniJaws" remote="github" revision="sixteen-qpr2" />
-  <project path="packages/services/Iwlan" name="Pixelify-AOSP/packages_services_Iwlan" groups="pdk-cw-fs,pdk-fs" remote="github"/>
-  <project path="packages/services/AxQuickLook" name="Pixelify-AOSP/packages_services_AxQuickLook" remote="github" />
-  <project path="frameworks/opt/telephony" name="Pixelify-AOSP/frameworks_opt_telephony" groups="pdk,sysui-studio" remote="github" />
-  <project path="vendor/lineage" name="Pixelify-AOSP/vendor_lineage" remote="github" />
-  <project path="system/sepolicy" name="Pixelify-AOSP/system_sepolicy" groups="pdk" remote="github" />
-  <project path="device/custom/sepolicy" name="Pixelify-AOSP/android_device_custom_sepolicy" remote="github" />
-  <project path="device/lineage/sepolicy" name="Pixelify-AOSP/device_lineage_sepolicy" remote="github" />
-  <project path="vendor/custom" name="Pixelify-AOSP/vendor_custom" remote="github" />
-  <project path="vendor/custom-preference" name="Pixelify-AOSP/vendor_custom-preference" remote="github" />
-  <project path="libcore" name="Pixelify-AOSP/libcore" remote="github" />
-  <project path="system/core" name="Pixelify-AOSP/system_core" groups="pdk" remote="github" />
-  <project path="hardware/interfaces" name="Pixelify-AOSP/android_hardware_interfaces" groups="pdk,sysui-studio" remote="github" />
-  <project path="external/bouncycastle" name="Pixelify-AOSP/external_bouncycastle" groups="pdk" remote="github" />
-  <project path="bionic" name="Pixelify-AOSP/android_bionic" groups="pdk" remote="github" />
+  <project path="frameworks/base" name="ascp-oss/android_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="github" revision="clean-branch" />
+  <project path="frameworks/av" name="ascp-oss/android_frameworks_av" groups="pdk,sysui-studio" remote="github" />
+  <project path="frameworks/libs/systemui" name="ascp-oss/frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="github" />
+  <project path="frameworks/native" name="ascp-oss/android_frameworks_native" groups="pdk" remote="github" />
+  <project path="packages/apps/Settings" name="ascp-oss/android_packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc,sysui-studio" remote="github" revision="clean-branch" />
+  <project path="packages/services/Telecomm" name="ascp-oss/android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="github" />
+  <project path="packages/services/OmniJaws" name="ascp-oss/packages_services_OmniJaws" remote="github" revision="sixteen-qpr2" />
+  <project path="packages/services/Iwlan" name="ascp-oss/packages_services_Iwlan" groups="pdk-cw-fs,pdk-fs" remote="github"/>
+  <project path="packages/services/AxQuickLook" name="ascp-oss/packages_services_AxQuickLook" remote="github" />
+  <project path="frameworks/opt/telephony" name="ascp-oss/frameworks_opt_telephony" groups="pdk,sysui-studio" remote="github" />
+  <project path="vendor/lineage" name="ascp-oss/vendor_lineage" remote="github" />
+  <project path="system/sepolicy" name="ascp-oss/system_sepolicy" groups="pdk" remote="github" />
+  <project path="device/custom/sepolicy" name="ascp-oss/android_device_custom_sepolicy" remote="github" />
+  <project path="device/lineage/sepolicy" name="ascp-oss/device_lineage_sepolicy" remote="github" />
+  <project path="vendor/custom" name="ascp-oss/vendor_custom" remote="github" />
+  <project path="vendor/custom-preference" name="ascp-oss/vendor_custom-preference" remote="github" />
+  <project path="libcore" name="ascp-oss/libcore" remote="github" />
+  <project path="system/core" name="ascp-oss/system_core" groups="pdk" remote="github" />
+  <project path="hardware/interfaces" name="ascp-oss/android_hardware_interfaces" groups="pdk,sysui-studio" remote="github" />
+  <project path="external/bouncycastle" name="ascp-oss/external_bouncycastle" groups="pdk" remote="github" />
+  <project path="bionic" name="ascp-oss/android_bionic" groups="pdk" remote="github" />
 
   <!-- Packages Repos -->
-  <project path="packages/apps/LMOFreeform" name="Pixelify-AOSP/packages_apps_LMOFreeform" remote="github" />
-  <project path="packages/apps/ColumbusService" name="Pixelify-AOSP/android_packages_apps_ColumbusService" remote="github" />
-  <project path="packages/apps/AppLocker" name="Pixelify-AOSP/packages_apps_AppLocker" remote="github" />
-  <project path="packages/apps/Sandbox" name="Pixelify-AOSP/packages_apps_Sandbox" remote="github" />
-  <project path="packages/apps/GameSpace" name="Pixelify-AOSP/packages_apps_GameSpace" remote="github" />
-  <project path="packages/apps/ThemePicker" name="Pixelify-AOSP/packages_apps_ThemePicker" remote="github" />
-  <project path="packages/apps/WallpaperPicker2" name="Pixelify-AOSP/packages_apps_WallpaperPicker2" remote="github" />
-  <project path="packages/apps/AxThemePicker" name="Pixelify-AOSP/packages_apps_AxThemePicker" remote="github" />
-  <project path="packages/apps/Backgrounds" name="Pixelify-AOSP/packages_apps_Backgrounds" remote="github" />
-  <project path="packages/modules/Bluetooth" name="Pixelify-AOSP/android_packages_modules_Bluetooth" groups="pdk" remote="github" />
-  <project path="packages/modules/Wifi" name="Pixelify-AOSP/android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="github" />
+  <project path="packages/apps/LMOFreeform" name="ascp-oss/packages_apps_LMOFreeform" remote="github" />
+  <project path="packages/apps/ColumbusService" name="ascp-oss/android_packages_apps_ColumbusService" remote="github" />
+  <project path="packages/apps/AppLocker" name="ascp-oss/packages_apps_AppLocker" remote="github" />
+  <project path="packages/apps/Sandbox" name="ascp-oss/packages_apps_Sandbox" remote="github" />
+  <project path="packages/apps/GameSpace" name="ascp-oss/packages_apps_GameSpace" remote="github" />
+  <project path="packages/apps/ThemePicker" name="ascp-oss/packages_apps_ThemePicker" remote="github" />
+  <project path="packages/apps/WallpaperPicker2" name="ascp-oss/packages_apps_WallpaperPicker2" remote="github" />
+  <project path="packages/apps/AxThemePicker" name="ascp-oss/packages_apps_AxThemePicker" remote="github" />
+  <project path="packages/apps/Backgrounds" name="ascp-oss/packages_apps_Backgrounds" remote="github" />
+  <project path="packages/modules/Bluetooth" name="ascp-oss/android_packages_modules_Bluetooth" groups="pdk" remote="github" />
+  <project path="packages/modules/Wifi" name="ascp-oss/android_packages_modules_Wifi" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="github" />
 
   <!-- Updater -->
-  <project path="packages/apps/OpenDelta" name="Pixelify-AOSP/packages_apps_OpenDelta" remote="github" />
+  <project path="packages/apps/OpenDelta" name="ascp-oss/packages_apps_OpenDelta" remote="github" />
 
   <!-- vendor repos-->
   <project path="vendor/gms" name="kenway214/vendor_gms_ascp" remote="codeberg" />
-  <project path="vendor/revanced" name="Pixelify-AOSP/vendor_revanced" remote="github" />
+  <project path="vendor/revanced" name="ascp-oss/vendor_revanced" remote="github" />
 </manifest>
